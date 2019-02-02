@@ -5,7 +5,7 @@ _site/
 .sass-cache
 
 # Ruby
-.bundle/
+#.bundle/
 #.byebug_history
 #.ruby-gemset
 #.ruby-version
