@@ -1,0 +1,21 @@
+<header class="site-header {{ page.layout }}" role="banner">
+	<div class="navbar-fixed">
+		<nav class="blue">
+		<div class="nav-wrapper">
+			<a class="brand-logo hide-on-small-and-down" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+			<div class="brand-logo hide-on-med-and-up">{{ site.short_title | escape }}</div>
+			<a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+			{%- for page in site.pages reversed-%}
+				{%- if page.title -%}
+					<li><a class="waves-effect" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></li>
+				{%- endif -%}
+			{%- endfor -%}
+			</ul>
+		</div>
+		</nav>
+	</div>
+
+	{%- include sidenav.html-%}
+
+</header>

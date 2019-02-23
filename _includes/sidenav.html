@@ -1,0 +1,27 @@
+<ul class="sidenav" id="mobile-menu">
+  	<li><a class="waves-effect" href="{{'/' | relative_url}}">Home</a></li>
+	{%- for p in site.pages reversed-%}	
+		{%- if p.title -%}
+			<li><div class="divider"></div></li>
+			<li>
+			{%- if site[p.category] -%}
+				<ul class="collapsible collapsible-accordion">
+					<li>
+						<a class="collapsible-header waves-effect">{{ p.title | escape }}<i class="material-icons right">arrow_drop_down</i></a>
+						<div class="collapsible-body">
+							<ul>
+								{%- for c in site[p.category] -%}								
+									{%- if c.category == p.category -%}									
+										<li><a href="{{ c.url | relative_url }}">{{ c.title | escape }}</a></li>
+									{%- endif -%}
+								{%- endfor -%}
+							</ul>
+						</div>
+					</li>
+				</ul>
+			{%- else -%}
+				<a class="waves-effect" href="{{ page.url | relative_url }}">{{ p.title | escape }}</a>
+			{%- endif -%}			
+		{%- endif -%}
+	{%- endfor -%}
+</ul>

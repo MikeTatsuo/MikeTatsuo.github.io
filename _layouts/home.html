@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{%- assign pgs = site.pages | reverse -%}
+{%- include parallax.html page_name="home.md" -%} 
+<h1 class="center blue-text">Developer (In Development)</h1>
+<div class="container">
+<div class="row">
+{%- for p in pgs -%}
+	{%- if p.title -%}
+		<div class="col s12 m6 l4">
+			<a href="{{ p.url | relative_url }}">
+				<div class="card hoverable small">
+					<div class="card-image">
+							<img src="{{ '/assets/img/' | append: p.name | replace: '.md','.jpg' | relative_url }}">
+							<span class="card-title">{{ p.title | escape }}</span>
+					</div>
+					<div class="card-content">
+						<p>{{ p.description | escape }}</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	{%- endif -%}
+{%- endfor -%}
+</div>
+</div>
+{%- include parallax.html page_name="home.md" -%} 
