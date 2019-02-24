@@ -1,10 +1,9 @@
 ---
-layout: mikepedia
-title:  "Introduction"
-date:   2019-01-01 00:00
-category: introduction
-permalink: /mikepedia
-description: This is the introduction for Mikepedia
+layout: post
+title:  "test folder b"
+date:   2019-01-06 14:56:17 -0200
+category: test
+categories: test test2
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
