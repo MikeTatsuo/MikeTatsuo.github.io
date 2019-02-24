@@ -1,4 +1,5 @@
-<ul class="sidenav sidenav-fixed" id="mikepedia-menu">
+
+{% comment %} <ul class="sidenav sidenav-fixed" id="mikepedia-menu"> {% endcomment %}
 	{%- assign mikepedia = site.mikepedia| group_by: 'category' -%}
 	{%- for categ in mikepedia -%}
 		<ul class="collapsible collapsible-accordion">
@@ -14,6 +15,7 @@
 								<ul>
 									<li>
 										<ul class="collapsible collapsible-accordion">
+										<li><div class="divider"></div></li>
 											<li>
 												<div class="collapsible-header waves-effect">
 													{{ sub | escape }}<i class="material-icons right">arrow_drop_down</i>
@@ -22,12 +24,13 @@
 							{%-endif-%}
 													<ul>
 														{%- for item in subcategory.items -%}
-															<li>{{ item.title | capitalize | escape }}</li>
+															<li><a href="{{ item.url | relative_url }}">{{ item.title | capitalize | escape }}</a></li>
 														{%- endfor -%}
 													</ul>
 							{%- if sub != "" -%}
 												</div>
 											</li>
+											
 										</ul>
 									</li>
 								</ul>
@@ -35,6 +38,7 @@
 					{%- endfor -%}
 				</div>
 			</li>
+			<li><div class="divider"></div></li>
 		</ul>		
 	{%- endfor -%}
-</ul>
+{% comment %} </ul> {% endcomment %}

@@ -9,18 +9,22 @@
 					<li>
 						<a class="collapsible-header waves-effect">{{ p.title | escape }}<i class="material-icons right">arrow_drop_down</i></a>
 						<div class="collapsible-body">
-							<ul>
-								{%- for c in site[p.category] -%}								
-									{%- if c.category == p.category -%}									
+							<ul>{%- if p.category == "mikepedia"-%}
+									{%- include mikepedia_sidenav.html -%}
+									{%-else -%}	
+								{%- for c in site[p.category] -%}							
+									{%- if c.category == p.category -%}
+														
 										<li><a href="{{ c.url | relative_url }}">{{ c.title | escape }}</a></li>
+										
 									{%- endif -%}
-								{%- endfor -%}
+								{%- endfor -%}{%-endif-%}
 							</ul>
 						</div>
 					</li>
 				</ul>
 			{%- else -%}
-				<a class="waves-effect" href="{{ page.url | relative_url }}">{{ p.title | escape }}</a>
+				<a class="waves-effect" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
 			{%- endif -%}			
 		{%- endif -%}
 	{%- endfor -%}

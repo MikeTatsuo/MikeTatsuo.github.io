@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mikepedia
 title:  "test folder b"
 date:   2019-01-06 14:56:17 -0200
 category: test

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mikepedia
 title:  "object"
 date:   2019-01-07 14:56:17 -0200
 category: programming

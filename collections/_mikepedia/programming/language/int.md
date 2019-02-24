@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mikepedia
 title:  "int"
 date:   2019-01-08 14:56:17 -0200
 category: programming
