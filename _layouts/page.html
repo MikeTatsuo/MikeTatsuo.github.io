@@ -5,7 +5,8 @@ layout: default
 <header class="center blue-text">
 	{%- include parallax.html page_name=page.name -%}
 	<h1>{{ page.title | escape }}</h1>
-	<h2>{{ page.description | escape }}</h2>
+	<h3>{{ page.subtitle | escape }}</h3>
+	<h5>{{ page.description | escape }}</h5>
 </header>
 <div class="container">
 	{{ content }}

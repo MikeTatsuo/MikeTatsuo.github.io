@@ -18,9 +18,15 @@ short_title: D(iD)
 author: Mike Tatsuo
 email: mike_tatsuo@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Developer (in Development) é o meu website pessoal, portifólio, blog, 
+  e Mikepedia, um guia de referências de tudo que eu ache útil;
+  sintaxes de programação, dicionários, guias, conhecimento em geral,
+  concentrado em um único lugar para fácil consulta.
+
+  #Developer (in development) is my personal website, portfolio, blog, 
+  #and Mikepedia, a guide with references of everything I find useful; 
+  #programming syntax, dictionaries, guides, knowledge in general, 
+  #concentrated in one place for easy consultation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb

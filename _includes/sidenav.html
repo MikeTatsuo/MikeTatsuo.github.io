@@ -4,28 +4,29 @@
 		{%- if p.title -%}
 			<li><div class="divider"></div></li>
 			<li>
-			{%- if site[p.category] -%}
-				<ul class="collapsible collapsible-accordion">
-					<li>
-						<a class="collapsible-header waves-effect">{{ p.title | escape }}<i class="material-icons right">arrow_drop_down</i></a>
-						<div class="collapsible-body">
-							<ul>{%- if p.category == "mikepedia"-%}
-									{%- include mikepedia_sidenav.html -%}
+				{%- if site[p.category] -%}
+					<ul class="collapsible collapsible-accordion">
+						<li>
+							<a class="collapsible-header waves-effect">{{ p.title | escape }}<i class="material-icons right">arrow_drop_down</i></a>
+							<div class="collapsible-body">
+								<ul>
+									{%- if p.category == "mikepedia"-%}
+										{%- include mikepedia_sidenav.html -%}
 									{%-else -%}	
-								{%- for c in site[p.category] -%}							
-									{%- if c.category == p.category -%}
-														
-										<li><a href="{{ c.url | relative_url }}">{{ c.title | escape }}</a></li>
-										
-									{%- endif -%}
-								{%- endfor -%}{%-endif-%}
-							</ul>
-						</div>
-					</li>
-				</ul>
-			{%- else -%}
-				<a class="waves-effect" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
-			{%- endif -%}			
+										{%- for c in site[p.category] -%}							
+											{%- if c.category == p.category -%}														
+												<li><a href="{{ c.url | relative_url }}">{{ c.title | escape }}</a></li>
+											{%- endif -%}
+										{%- endfor -%}
+									{%-endif-%}
+								</ul>
+							</div>
+						</li>
+					</ul>
+				{%- else -%}
+					<a class="waves-effect" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
+				{%- endif -%}
+			</li>		
 		{%- endif -%}
 	{%- endfor -%}
 </ul>
