@@ -18,4 +18,4 @@ Já trabalhei com construção civil como Instalador de Drywall, fazendo um pouq
 
 Fui árbitro de patinação, na modalidade Freestyle Slides, arbitrando em algumas das maiores competições no Brasil, participei em algumas corridas de ciclismo de estrada na categoria amador, e alguns dos meu interesses são aviação, modelismos, segunda guerra mundial, linux, atualmente arduíno e impressão 3D.
 
-Neste website/blog pretendo escrever um pouco sobre o que aprendi com alguns dos meu hobbies/interesses, que são vários que vão desde ciclismo, patinação, programação, "Faça você mesmo" (DIY), etc, tudo que eu aprender em geral.
+Neste website/blog pretendo escrever um pouco sobre o que aprendi com alguns dos meu hobbies/interesses/trabalho, sendo principalmente uma fonte de registro e consulta do que aprendi.

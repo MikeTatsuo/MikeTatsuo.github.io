@@ -7,19 +7,22 @@ category: mikepedia
 schema: https://schema.org/CollectionPage
 ---
 
-# Introdução
+***
+## Introdução
 
-Um pequeno apanhado de tudo, separado por categorias e subcategorias para facilitar a organização e também pra futuras consultas.
+Um pequeno apanhado de tudo que acredito ser relevante para manter registrado, podendo conter sintaxes de linguagem de programação, conceitos variados, guias, passo-a-passo de "Faça Você Mesmo" (DIY).
 
-## Organização
+***
+### Organização
 
-exemplo:
+Os artigos estão separados por categorias e também podem ter subcategorias para facilitar as consultas.
+
+Quando houver algum conteúdo, o menu ao lado deve apresentar a seguinte estrutura:
 ```
-Programação
-|_ Javascript
-    |_ Arrays
+Categoria principal
+|_ Artigo
+|_ Subcategoria
+    |_ Artigo
 ```
 
-## Aviso
-
-Como tudo que estiver aqui é apenas para o meu uso pessoal, podendo conter erros, utilize o conteúdo disponível aqui por conta e risco.
+***

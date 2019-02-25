@@ -22,11 +22,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   e Mikepedia, um guia de referências de tudo que eu ache útil;
   sintaxes de programação, dicionários, guias, conhecimento em geral,
   concentrado em um único lugar para fácil consulta.
-
-  #Developer (in development) is my personal website, portfolio, blog, 
-  #and Mikepedia, a guide with references of everything I find useful; 
-  #programming syntax, dictionaries, guides, knowledge in general, 
-  #concentrated in one place for easy consultation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  MikeTatsuo
@@ -35,6 +30,8 @@ instagram_username: mike_tatsuo
 twitter_username: MichaelTatsuo
 linkedin_username: miketatsuo
 youtube_username: m1c4o
+
+show_excerpts: true
 
 # collections
 collections_dir: collections

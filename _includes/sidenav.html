@@ -10,7 +10,7 @@
 							<a class="collapsible-header waves-effect">{{ p.title | escape }}<i class="material-icons right">arrow_drop_down</i></a>
 							<div class="collapsible-body">
 								<ul>
-									{%- if p.category == "mikepedia"-%}
+									{%- if p.category == "mikepedia" && site.mikepedia.size > 0-%}
 										{%- include mikepedia_sidenav.html -%}
 									{%-else -%}	
 										{%- for c in site[p.category] -%}							

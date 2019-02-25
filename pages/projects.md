@@ -8,4 +8,8 @@ category: projects
 schema: https://schema.org/CollectionPage
 ---
 
-{%- include cards_list.html pages=site.projects-%}    
+{%- if site.projects.size > 0 -%}
+    {%- include cards_list.html pages=site.projects-%}
+{%- else -%}
+    #### Nenhum projeto publicado ainda
+{%- endif -%}

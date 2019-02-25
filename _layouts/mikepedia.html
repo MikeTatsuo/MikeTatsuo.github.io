@@ -18,5 +18,10 @@ layout: default
 </article>
 
 <ul class="sidenav sidenav-fixed" id="mikepedia-menu" itemscope itemtype="https://schema.org/WPSideBar">
-  {%- include mikepedia_sidenav.html -%}
+  {%- if site.mikepedia.size > 0 -%}
+    {%- include mikepedia_sidenav.html -%}
+  {%- else -%}
+    <li>Nenhum conteúdo.</li>
+  {%- endif -%}
+
 </ul>

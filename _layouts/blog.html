@@ -28,14 +28,14 @@ layout: default
           {{ post.title | escape }}
           </a>
         </h4>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+        {{ post.description }}
 
       </li>
     {%- endfor -%}
     </ul>
-    <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></p>
+    {% comment %} <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></p> {% endcomment %}
+  {%- else -%}
+    <h4>Nenhum post publicado ainda</h4>
   {%- endif -%}
 </div>
 

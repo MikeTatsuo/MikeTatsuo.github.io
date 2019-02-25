@@ -6,6 +6,7 @@ layout: default
 
   <header>
     <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+    <h5 itemprop="alternativeHeadline">{{ page.description | escape }}</h5>
     <p>
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -19,6 +20,8 @@ layout: default
   <div itemprop="articleBody">
     {{ content }}
   </div>
+
+  {% comment %} <button /> voltar {% endcomment %}
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
