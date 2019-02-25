@@ -29,8 +29,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   #concentrated in one place for easy consultation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
 github_username:  MikeTatsuo
+facebook_username: m1c4o
+instagram_username: mike_tatsuo
+twitter_username: MichaelTatsuo
+linkedin_username: miketatsuo
+youtube_username: m1c4o
 
 # collections
 collections_dir: collections

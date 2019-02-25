@@ -2,7 +2,7 @@
 layout: blog
 title: Blog
 permalink: /blog
-description: A little bit of nothing
+description: O que está acontecendo?
 category: blog
 ---
 

@@ -5,6 +5,7 @@ subtitle: Quem sou eu?
 permalink: /about
 description: Um pouco sobre meus interesses, hobbies, etc.
 category: about_me
+schema: https://schema.org/AboutPage
 ---
 
 Olá,

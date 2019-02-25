@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
 {%- include head.html -%}
 
-<body class="lime lighten-5">
+<body class="lime lighten-5" itemscope itemtype="https://schema.org/WebPage">
   {%- include header.html -%}
-  <main class="{{ page.layout }}" aria-label="Content">
+  <main class="{{ page.layout }}" aria-label="Content" itemprop="mainEntity">
     {{ content }}
   </main>
   {%- include footer.html -%}

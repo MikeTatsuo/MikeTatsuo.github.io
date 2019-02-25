@@ -2,37 +2,21 @@
 layout: default
 ---
 
-{% comment %} {%- assign mikepedia = site.mikepedia| group_by: 'category' -%}
-{%- for cat in mikepedia -%}
-	<div class="center blue-text">
-		<h1 class="">{{ cat.name | capitalize | escape }}</h1>	
-	</div>
-	{%- include parallax.html page_name=cat.name -%}
-{%- endfor -%} {% endcomment %}
-
-<article class="container" itemscope itemtype="http://schema.org/BlogPosting">
-
+<article class="container" itemscope itemtype="{{ page.schema }}">
   <header>
-    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-    <p>
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
+    <h1 itemprop="name">{{ page.title | escape }}</h1>
+    <p>      
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%}
+    </p>
   </header>
 
   <div itemprop="articleBody">
     {{ content }}
-  </div>
-
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+  </div>  
 </article>
 
-<ul class="sidenav sidenav-fixed" id="mikepedia-menu">
-{%- include mikepedia_sidenav.html -%}
+<ul class="sidenav sidenav-fixed" id="mikepedia-menu" itemscope itemtype="https://schema.org/WPSideBar">
+  {%- include mikepedia_sidenav.html -%}
 </ul>

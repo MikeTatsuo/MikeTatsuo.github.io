@@ -1,44 +1,40 @@
-
-{% comment %} <ul class="sidenav sidenav-fixed" id="mikepedia-menu"> {% endcomment %}
-	{%- assign mikepedia = site.mikepedia| group_by: 'category' -%}
-	{%- for categ in mikepedia -%}
-		<ul class="collapsible collapsible-accordion">
-			<li>
-				<div class="collapsible-header waves-effect">
-					{{ categ.name | capitalize | escape }}<i class="material-icons right">arrow_drop_down</i>
-				</div>
-				<div class="collapsible-body">
-					{%- assign subcategories = categ.items | group_by_exp: 'item', "item.categories | remove_first: categ.name | remove: '[' | remove: ', ' | remove: ']' " -%}
-					{%- for subcategory in subcategories -%}						
-						{%- assign sub = subcategory.name | remove: '"' | capitalize -%}
-							{%- if sub != "" -%}
-								<ul>
-									<li>
-										<ul class="collapsible collapsible-accordion">
+{%- assign mikepedia = site.mikepedia| group_by: 'category' -%}
+{%- for categ in mikepedia -%}
+	<ul class="collapsible collapsible-accordion">
+		<li>
+			<div class="collapsible-header waves-effect">
+				{{ categ.name | capitalize | escape }}<i class="material-icons right">arrow_drop_down</i>
+			</div>
+			<div class="collapsible-body">
+				{%- assign subcategories = categ.items | group_by_exp: 'item', "item.categories | remove_first: categ.name | remove: '[' | remove: ', ' | remove: ']' " -%}
+				{%- for subcategory in subcategories -%}						
+					{%- assign sub = subcategory.name | remove: '"' | capitalize -%}
+						{%- if sub != "" -%}
+							<ul>
+								<li>
+									<ul class="collapsible collapsible-accordion">
 										<li><div class="divider"></div></li>
-											<li>
-												<div class="collapsible-header waves-effect">
-													{{ sub | escape }}<i class="material-icons right">arrow_drop_down</i>
-												</div>
-												<div class="collapsible-body">
-							{%-endif-%}
-													<ul>
-														{%- for item in subcategory.items -%}
-															<li><a href="{{ item.url | relative_url }}">{{ item.title | capitalize | escape }}</a></li>
-														{%- endfor -%}
-													</ul>
-							{%- if sub != "" -%}
-												</div>
-											</li>
-											
-										</ul>
-									</li>
-								</ul>
-						{%- endif -%}
-					{%- endfor -%}
-				</div>
-			</li>
-			<li><div class="divider"></div></li>
-		</ul>		
-	{%- endfor -%}
-{% comment %} </ul> {% endcomment %}
+										<li>
+											<div class="collapsible-header waves-effect">
+												{{ sub | escape }}<i class="material-icons right">arrow_drop_down</i>
+											</div>
+											<div class="collapsible-body">
+						{%-endif-%}
+												<ul>
+													{%- for item in subcategory.items -%}
+														<li><a href="{{ item.url | relative_url }}">{{ item.title | capitalize | escape }}</a></li>
+													{%- endfor -%}
+												</ul>
+						{%- if sub != "" -%}
+											</div>
+										</li>										
+									</ul>
+								</li>
+							</ul>
+					{%- endif -%}
+				{%- endfor -%}
+			</div>
+		</li>
+		<li><div class="divider"></div></li>
+	</ul>		
+{%- endfor -%}

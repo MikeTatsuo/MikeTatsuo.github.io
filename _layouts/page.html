@@ -1,14 +1,15 @@
 ---
 layout: default
 ---
-
-<header class="center blue-text">
+<div itemscope itemtype="{{page.schema}}">
+	<header class="center blue-text">
+		{%- include parallax.html page_name=page.name -%}
+		<h1 itemprop="name headline">{{ page.title | escape }}</h1>
+		<h3 itemprop="alternativeHeadline">{{ page.subtitle | escape }}</h3>
+		<h5>{{ page.description | escape }}</h5>
+	</header>
+	<div class="container" itemprop="mainContentOfPage">
+		{{ content }}
+	</div>
 	{%- include parallax.html page_name=page.name -%}
-	<h1>{{ page.title | escape }}</h1>
-	<h3>{{ page.subtitle | escape }}</h3>
-	<h5>{{ page.description | escape }}</h5>
-</header>
-<div class="container">
-	{{ content }}
-</div>
-{%- include parallax.html page_name=page.name -%}
+<div>
