@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: 'pt-br' }}">
 {%- include head.html -%}
 
-<body class="lime lighten-5" itemscope itemtype="https://schema.org/WebPage">
+<body itemscope itemtype="https://schema.org/WebPage">
   {%- include header.html -%}
   <main class="{{ page.layout }}" aria-label="Content" itemprop="mainEntity">
     {{ content }}
