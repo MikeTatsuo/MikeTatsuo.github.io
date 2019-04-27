@@ -3,7 +3,7 @@ layout: post
 title: Meus primeiros conteúdos
 description: Os primeiros conteúdos publicados no MikeTatsuo.github.io
 date: 2019-02-26 17:08 -02:00
-author: MikeTatsuo
+author: Mike Tatsuo
 categories: blog
 ---
 #### keyboad-abnt2-thinkpad
