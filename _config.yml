@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Developer (in Development)
-short_title: D(iD)
+title: Mike Tatsuo
+short_title: MT
 author: Mike Tatsuo
 email: mike_tatsuo@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Developer (in Development) é o meu website pessoal, portifólio, blog, 
+  Developer (in Development) é o meu website pessoal, portifólio, blog,
   e Mikepedia, um guia de referências de tudo que eu ache útil;
   sintaxes de programação, dicionários, guias, conhecimento em geral,
   concentrado em um único lugar para fácil consulta.
