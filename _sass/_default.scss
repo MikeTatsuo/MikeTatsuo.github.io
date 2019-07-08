@@ -1,10 +1,13 @@
-// stick the footer on the bottom of the page
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column; // nowrap the text on navbar
+html {
+  color: #142140 !important;
 
-  /* @media screen {
+// stick the footer on the bottom of the page
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column; // nowrap the text on navbar
+
+    /* @media screen {
     .mikepedia {
       @media (max-width: 992px) {
         padding-left: 0px;
@@ -22,13 +25,38 @@ body {
     }
   } */
 
-  @import "header";
+    @import "header";
 
-  main {
-    flex: 1 0 auto;
+    main {
+      flex: 1 0 auto;
 
-    @import "home";
+      .chip {
+        height: 21px;
+        background: #2286D8;
+        color: #fff;
+        font-size: 10px;
+        border-radius: 10px;
+        line-height: 21px;
+      }
+
+      @import "home";
+    }
+
+    @import "footer";
   }
 
-  @import "footer";
+  h1 {
+    text-align: center;
+    font-size: 40px !important;
+    font-weight: bold;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 35px !important;
+  }
+
+  h3 {
+    font-size: 24px !important;
+  }
 }

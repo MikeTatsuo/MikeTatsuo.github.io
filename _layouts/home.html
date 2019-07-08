@@ -4,21 +4,21 @@ layout: default
 
 {%- assign pgs = site.pages | reverse -%}
 {%- include parallax.html page_name="home.md" -%}
-<section class="container">
+<section class="container portifolio">
 	<h1>Portifólio</h1>
 	<h2>subtitle</h2>
-	<div class="row hoverable">
-		<img class="col s4 offset-s2 responsive-img" src="" alt="portifolio image">
-		<div class="col s4">
+	<div class="row hoverable portifolio-item">
+		<img class="col s6 responsive-img portifolio-item-img" src="" alt="portifolio image">
+		<div class="col s6">
 			<h3>example title</h3>
 			<p>example description</p>
 			<div class="chip">skill pills</div>
 		</div>
 	</div>
 </section>
-<section class="container">
+<section class="habilidades">
 	<h1>Minhas Habilidades</h1>
-	<div class="row">
+	<div class="container row">
 		<ul class="col s5 offset-s1">
 			<li>habilidade 1</li>
 			<li>habilidade 2</li>
@@ -35,7 +35,7 @@ layout: default
 		</ul>
 	</div>
 </section>
-<section class="container">
+<section class="container projetos">
 	<h1>Projetos</h1>
 	<h2>subtitle</h2>
 	<div class="row">
@@ -89,16 +89,16 @@ layout: default
 		</div>
 	</div>
 </section>
-<section class="container">
+<section class="mikepedia">
 	<h1>Mikepedia</h1>
-	<div class="row">
+	<div class="container row">
 		<p class="col s5 offset-s1">mikepedia description</p>
 		<div class="col s5">
 			<button class="btn">ir para Mikepedia</button>
 		</div>
 	</div>
 </section>
-<section class="container">
+<section class="container blog">
 	<h1>Blog</h1>
 	<h2>blog subtitle</h2>
 	<div class="divider"></div>
@@ -125,50 +125,18 @@ layout: default
 		</div>
 	</div>
 </section>
-<section class="container">
-	<h1>Sobre mim</h1>
-	<article class="row">
-		<div class="col s7">
-			<img src="" alt="sobre mim - image 1">
-			<img src="" alt="sobre mim - image 2">
-			<img src="" alt="sobre mim - image 3">
-		</div>
-		<div class="col s5">
-			<p>sobre mim - texto</p>
-		</div>
-	</article>
+<section class="about">
+	<div class="subsection-about">
+		<h1>Sobre mim</h1>
+		<article class="row">
+			<div class="col s7">
+				<img src="" alt="sobre mim - image 1">
+				<img src="" alt="sobre mim - image 2">
+				<img src="" alt="sobre mim - image 3">
+			</div>
+			<div class="col s5">
+				<p>sobre mim - texto</p>
+			</div>
+		</article>
+	</div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <h1 class="center blue-text">Mike Tatsuo</h1>
-<div class="container">
-<div class="row">
-{%- for p in pgs -%}
-	{%- if p.title -%}
-		<div class="col s12 m6 l4">
-			<a href="{{ p.url | relative_url }}">
-				<div class="card hoverable small">
-					<div class="card-image">
-							<img src="{{ '/assets/img/' | append: p.name | replace: '.md','.jpg' | relative_url }}">
-							<span class="card-title">{{ p.title | escape }}</span>
-					</div>
-					<div class="card-content">
-						<p>{{ p.description | escape }}</p>
-					</div>
-				</div>
-			</a>
-		</div>
-	{%- endif -%}
-{%- endfor -%}
-</div>
-</div> -->
