@@ -1,0 +1,40 @@
+header {
+  .navbar-fixed {
+    height: 60px;
+    position: absolute;
+
+    #nav {
+      background: rgba(34, 134, 216, 0);
+
+      .brand-logo {
+        white-space: nowrap;
+        height: inherit;
+
+        .nav-logo {
+          width: 45px;
+          height: 45px;
+          margin: 0 24px;
+          vertical-align: middle;
+        }
+      }
+
+      .collapsible-header {
+        padding: 0 30px !important;
+      }
+
+      ul {
+        li {
+          a.waves-effect:hover {
+            color: #142140;
+            background: rgba(142, 190, 226, 0.5);
+          }
+
+          a.waves-effect:active {
+            color: #fff;
+          }
+        }
+
+      }
+    }
+  }
+}
