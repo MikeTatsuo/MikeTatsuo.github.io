@@ -1,0 +1,15 @@
+.parallax-container {
+  height: 100vh;
+
+  .parallax {
+    background: #143788;
+
+    .parallax-img {
+      height: 150vh;
+      width: auto;
+      opacity: 0.5 !important;
+    }
+  }
+
+  @import "parallax_text";
+}
