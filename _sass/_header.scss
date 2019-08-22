@@ -16,6 +16,14 @@ header {
           margin: 0 24px;
           vertical-align: middle;
         }
+
+        .nav-text {
+          font-size: 32px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
 
       .collapsible-header {
@@ -24,16 +32,18 @@ header {
 
       ul {
         li {
-          a.waves-effect:hover {
-            color: $azul-5;
-            background: $azul-1;
-          }
+          a.waves-effect{
+            &:hover {
+              color: $azul-5;
+              background: $azul-1;
+            }
 
-          a.waves-effect:active {
-            color: $branco;
-          }
+            &:active {
+              color: $branco;
+              background: $azul-3;
+            }
+          }          
         }
-
       }
     }
   }
