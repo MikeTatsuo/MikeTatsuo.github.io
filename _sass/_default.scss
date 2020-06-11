@@ -1,0 +1,35 @@
+// stick the footer on the bottom of the page
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; // nowrap the text on navbar
+  font-family: Roboto, Arial, sans-serif;
+
+  /* @media screen {
+    .mikepedia {
+      @media (max-width: 992px) {
+        padding-left: 0px;
+      }
+
+      @media (min-width: 992px) {
+        padding-left: 300px;
+
+        nav {
+          width: -webkit-calc(100% - 300px);
+          width: -moz-calc(100% - 300px);
+          width: calc(100% - 300px);
+        }
+      }
+    }
+  } */
+
+  @import "header";
+
+  main {
+    flex: 1 0 auto;
+
+    @import "home";
+  }
+
+  @import "footer";
+}

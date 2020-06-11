@@ -1,0 +1,50 @@
+header {
+  .navbar-fixed {
+    height: 60px;
+    position: absolute;
+
+    #nav {
+      background: $azul-2;
+
+      .brand-logo {
+        white-space: nowrap;
+        height: inherit;
+
+        .nav-logo {
+          width: 45px;
+          height: 45px;
+          margin: 0 24px;
+          vertical-align: middle;
+        }
+
+        .nav-text {
+          font-size: 32px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .collapsible-header {
+        padding: 0 30px !important;
+      }
+
+      ul {
+        li {
+          a.waves-effect{
+            &:hover {
+              color: $azul-5;
+              background: $azul-1;
+            }
+
+            &:active {
+              color: $branco;
+              background: $azul-3;
+            }
+          }          
+        }
+      }
+    }
+  }
+}
