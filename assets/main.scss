@@ -2,7 +2,10 @@
 ---
 
 /* rouge */
-@import "syntax-highlight";
+@import "../_sass/_syntax-highlight";
+
+/* mike-theme */
+@import "../_sass/_mike-theme";
 
 /* default */
-@import "default";
+@import "../_sass/_default";
