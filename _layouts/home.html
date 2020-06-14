@@ -4,20 +4,28 @@ layout: default
 
 {%- assign pgs = site.pages | reverse -%}
 {%- include parallax.html page_name="home.markdown" -%}
-<section class="container">
-	<h1>Portifólio</h1>
-	<h2>subtitle</h2>
-	<div class="row hoverable">
-		<img class="col s4 offset-s2 responsive-img" src="" alt="portifolio image">
-		<div class="col s4">
-			<h3>example title</h3>
-			<p>example description</p>
-			<div class="chip">skill pills</div>
+<section class="container portifolio">
+	<h1 class="title">Portifólio</h1>
+	<h2 class="subtitle">subtitle</h2>
+	<div class="row hoverable waves-effect waves-azul-1">
+		<img class="col s5 responsive-img portifolio-img" src="" alt="portifolio image">
+		<div class="col s7 portifolio-text-wrapper">
+			<h3 class="portifolio-text-title">example title</h3>
+			<p class="portifolio-text">example description</p>
+			<div class="chip portifolio-text-pills">skill pills</div>
+		</div>
+	</div>
+	<div class="row hoverable waves-effect waves-azul-1">
+		<img class="col s5 responsive-img portifolio-img" src="" alt="portifolio image">
+		<div class="col s7 portifolio-text-wrapper">
+			<h3 class="portifolio-text-title">example title</h3>
+			<p class="portifolio-text">example description</p>
+			<div class="chip portifolio-text-pills">skill pills</div>
 		</div>
 	</div>
 </section>
 <section class="container">
-	<h1>Minhas Habilidades</h1>
+	<h1 class="title">Minhas Habilidades</h1>
 	<div class="row">
 		<ul class="col s5 offset-s1">
 			<li>habilidade 1</li>
@@ -36,8 +44,8 @@ layout: default
 	</div>
 </section>
 <section class="container">
-	<h1>Projetos</h1>
-	<h2>subtitle</h2>
+	<h1 class="title">Projetos</h1>
+	<h2 class="subtitle">subtitle</h2>
 	<div class="row">
 		<div class="col s4">
 			<div class="card hoverable small">
@@ -90,7 +98,7 @@ layout: default
 	</div>
 </section>
 <section class="container">
-	<h1>Mikepedia</h1>
+	<h1 class="title">Mikepedia</h1>
 	<div class="row">
 		<p class="col s5 offset-s1">mikepedia description</p>
 		<div class="col s5">
@@ -99,8 +107,8 @@ layout: default
 	</div>
 </section>
 <section class="container">
-	<h1>Blog</h1>
-	<h2>blog subtitle</h2>
+	<h1 class="title">Blog</h1>
+	<h2 class="subtitle">blog subtitle</h2>
 	<div class="divider"></div>
 	<div class="section row hoverable">
 		<img class="col s4 responsive-img" src="" alt="post image">
@@ -126,7 +134,7 @@ layout: default
 	</div>
 </section>
 <section class="container">
-	<h1>Sobre mim</h1>
+	<h1 class="title">Sobre mim</h1>
 	<article class="row">
 		<div class="col s7">
 			<img src="" alt="sobre mim - image 1">
