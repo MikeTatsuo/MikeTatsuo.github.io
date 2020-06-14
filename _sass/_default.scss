@@ -2,10 +2,11 @@ html {
   color: #142140 !important;
 
 // stick the footer on the bottom of the page
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column; // nowrap the text on navbar
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; // nowrap the text on navbar
+  font-family: Roboto, Arial, sans-serif;
 
     /* @media screen {
     .mikepedia {

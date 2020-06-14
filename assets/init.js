@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   M.AutoInit()
 });
 
+window.onload = () => {
+  changeNavOpacity()
+}
+
 window.onscroll = () => {
   changeNavOpacity()
 }
@@ -18,6 +22,7 @@ const changeNavOpacity = () => {
   }
 
   navbar.style.backgroundColor = `rgba(34, 134, 216, ${percentage})`;
+  navbar.style.boxShadow = `0 2px 2px 0 rgba(31, 85, 181, ${percentage})`;
   for (let item of menuHover) {
     item.onmousedown = (e) => {
       e.target.style.backgroundColor = `rgba(31,85,181,${percentage})`;
